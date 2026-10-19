@@ -40,10 +40,10 @@ linux-server-configuration-management/
 ├── playbooks/
 │   └── site.yml
 ├── roles/linux_baseline/
-│   ├── vars/main.yml
-│   ├── tasks/main.yml
-│   ├── handlers/main.yml
-│   └── templates/ssh-baseline.conf.j2
+    ├── vars/main.yml
+    ├── tasks/main.yml
+    ├── handlers/main.yml
+    └── templates/ssh-baseline.conf.j2
 
 ```
 ## Prerequisites
