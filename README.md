@@ -26,7 +26,7 @@ The Execution Environment uses an RPM-based UBI 9 image. Managed servers
 can still run Ubuntu.
 
 ## Directory structure
-
+``` text
 linux-server-configuration-management/
 ├── README.md
 ├── .gitignore
@@ -44,7 +44,8 @@ linux-server-configuration-management/
 │   ├── tasks/main.yml
 │   ├── handlers/main.yml
 │   └── templates/ssh-baseline.conf.j2
-└
+
+```
 ## Prerequisites
 
 Control node: Ubuntu, Python 3, Podman, Git, OpenSSH client, and
