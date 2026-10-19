@@ -1,0 +1,13 @@
+---
+ansible-navigator:
+  execution-environment:
+    enabled: true
+    container-engine: podman
+    image: localhost/linux-baseline-ee:1.1
+    pull:
+      policy: never
+  mode: stdout
+  playbook-artifact:
+    enable: false
+  logging:
+    level: warning
