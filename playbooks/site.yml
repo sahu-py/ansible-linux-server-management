@@ -1,0 +1,8 @@
+---
+- name: Apply Linux baseline
+  hosts: lab
+  become: true
+  gather_facts: true
+  roles:
+    - linux_baseline
+

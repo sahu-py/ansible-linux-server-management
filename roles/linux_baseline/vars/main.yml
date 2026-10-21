@@ -1,0 +1,14 @@
+---
+# vars file for linux_baseline
+baseline_timezone: UTC
+baseline_packages:
+  - curl
+  - vim
+  - chrony
+baseline_ops_group: ops
+baseline_create_ops_group: true
+baseline_manage_sshd: false
+baseline_sshd_settings:
+  PermitRootLogin: "no"
+  PubkeyAuthentication: "yes"
+

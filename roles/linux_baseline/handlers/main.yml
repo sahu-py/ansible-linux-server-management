@@ -1,0 +1,18 @@
+---
+# handlers file for linux_baseline
+- name: Validate and reload sshd
+  block:
+    - name: Validate sshd configuration
+      ansible.builtin.command: /usr/sbin/sshd -t
+      changed_when: false
+    - name: Reload SSH daemon
+      ansible.builtin.service:
+        name: sshd
+        state: reloaded
+      when: ansible_os_family == "RedHat"
+    - name: Reload SSH service
+      ansible.builtin.service:
+        name: ssh
+        state: reloaded
+      when: ansible_os_family == "Debian"
+

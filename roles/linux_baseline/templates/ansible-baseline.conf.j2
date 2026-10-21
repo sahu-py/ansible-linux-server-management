@@ -1,0 +1,5 @@
+# Managed by Ansible. Validate access before enabling this file.
+{% for key, value in baseline_sshd_settings.items() %}
+{{ key }} {{ value }}
+{% endfor %}
+

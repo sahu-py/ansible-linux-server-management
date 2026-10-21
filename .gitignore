@@ -1,8 +1,4 @@
-context
-playbooks
-roles
-collections
+contexts
 dev
 group_vars
-linux_baseline
-tests
+ansible-navigator.log
